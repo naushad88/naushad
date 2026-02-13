@@ -22,7 +22,7 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  const scrollToSection = (e: React.MouseEvent<HTMLElement>, href: string) => {
     e.preventDefault()
     setIsMobileMenuOpen(false)
     const element = document.querySelector(href)
